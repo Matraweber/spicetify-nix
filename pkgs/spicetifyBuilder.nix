@@ -3,7 +3,7 @@
   stdenv,
   writeText,
   crudini,
-  zenity,
+  zenity ? null,
 }:
 lib.makeOverridable (
   {
