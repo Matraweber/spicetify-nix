@@ -1,4 +1,4 @@
-{ sources, lib }:
+{ sources, lib ? (import <nixpkgs> {}).lib}:
 let
   savePlaylists = {
     src = "${sources.dakshExtensions}/Extensions";
@@ -287,6 +287,7 @@ in
       playNext
       volumePercentage
       oldSidebar
+      keyboardShortcut
       addToQueueTop
       oneko
       starRatings
