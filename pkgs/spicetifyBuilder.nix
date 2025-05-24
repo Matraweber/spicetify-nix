@@ -4,7 +4,12 @@
   writeText,
   crudini,
   zenity ? null,
+  fetchurl
 }:
+
+let
+   isLinux = stdenv.isLinux;
+
 lib.makeOverridable (
   {
     spotify,
