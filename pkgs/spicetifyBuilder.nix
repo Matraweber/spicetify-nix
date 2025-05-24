@@ -1,5 +1,5 @@
 {
-  lib,
+  lib ? (import <nixpkgs> {}).lib,,
   stdenv,
   writeText,
   crudini,
