@@ -1,4 +1,4 @@
-{ sources, lib ? (import <nixpkgs> {}).lib}:
+{ sources, lib:
 let
   savePlaylists = {
     src = "${sources.dakshExtensions}/Extensions";
